@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/light7.min.css">
+    <link rel="stylesheet" href="css/light7-swiper.min.css">
+    <link rel="stylesheet" href="css/business.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+  <div class="page" style="position: relative">
+  	  	<header style="position: absolute;z-index: 99; width: 100%;height:40px">
+	  	  	<div class="row hbg" style="padding:10px 5px;">
+				<div class="col-sm-4 col-md-4" style="display:inline-block">
+	  	  			<img src="img/home_location.png" style="width:20px;height:20px"></img>
+			    	<input type="text" id='pickerdomain' style="width:40px" value="浙江"/>
+			    </div>
+			    <div class="col-sm-4 col-md-4 cw" style="display:inline-block;text-align:center;margin: 0 auto;">
+			    	<span>国家电网</span>
+			    </div>
+			    <div class="col-sm-4 col-md-4" style="display:inline-block;float: right">
+				    <div style="padding-right:10px">
+				    	<img style="width:20px;height:20px" src="img/home_login.png"></img>
+		    			<span>登录</span>
+				    </div>
+			    </div>
+	  	  	</div>
+		</header>
+        <div class="content" style="clear: both; width:100%">
+	        <div class="content-block" style="padding: 0;margin: 0">
+		        <img src="img/home_banner.png" style="margin-top:40px;width:100%;height:200px"></img>
+	            <div class="row" style="padding: 10px 10px;display:inline-block">
+		            <div class="col-sm-4 col-md-4" style="display:inline-block;">
+		            	<img style="width:33px;height:33px" src="img/home_electricity.png"></img>
+		            	<span>电量电费</span>
+		            </div>
+		            <div  class="col-sm-4 col-md-4" style="display:inline-block">
+		            	<img style="width:33px;height:33px" src="img/home_payment.png"></img>
+		            	<span>缴费记录</span>
+		            </div>
+		            <div class="col-sm-4 col-md-4" style="display:inline-block">
+		            	<img style="width:33px;height:33px" src="img/home_address.png"></img>
+		            	<span>服务网点</span>
+		            </div>
+	            </div>
+	          	<div style="margin: 0 auto;width: 300px">
+					<span style="font-size: 18px">无需绑定，输入户号，快速缴费</span>
+				</div>
+				<div class="search-input" style="margin:20px auto;width:200px">
+	              	<input type="password" id='password' style="width:200px;height: 2.5rem" placeholder='请选择缴费区域'/>
+	          	</div>
+				<div class="search-input" style="margin:20px auto;width:200px">
+	              	<input type="password" id='password' style="width:200px;height: 2.5rem" placeholder='请输入客户编号'/>
+	          	</div>
+	          	<div style="margin:20px auto;margin-bottom: 50px;width: 200px;"> 
+	              	<p><a href="log2.html" class="button button-fill button-warning" style="line-height: 2.5rem;height:2.5rem;text-align:center;">缴费</a></p>
+	          	</div>
+	          	<div class="row" style="padding: 5px">
+					<div class="col-sm-6 col-md-6" style="display:inline-block">
+						<img style="width:88px;height:88px" src="img/queryuser.png"></img>
+						<div style="display: inline-block">
+							<div>查询账户</div>
+							<a>如何查看></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6" style="display:inline-block">
+						<img style="width:88px;height:88px" src="img/bindcard.png"></img>
+						<div style="display: inline-block">
+							<div>绑定账户</div>
+							<a>用电尽在掌握></a>
+						</div>
+					</div>
+				</div>
+	        </div>
+        </div>
+        <nav class="bar bar-tab" style="height:3.5rem">
+		    <a class="tab-item active" href="#">
+		      <img src="img/tab_home_select.png" style="width:2rem;height:2rem"></img>
+		      <span style="display:block" class="tab-label">首页</span>
+		    </a>
+		    <a class="tab-item" href="#">
+		      <img src="img/tab_electricity.png" style="width:2rem;height:2rem"></img>
+		      <span style="display:block" class="tab-label">用电</span>
+		    </a>
+		    <a class="tab-item" href="#">
+		      <img src="img/tab_service.png" style="width:2rem;height:2rem"></img>
+		      <span style="display:block" class="tab-label">服务</span>
+		    </a>
+		    <a class="tab-item" href="#">
+		      <img src="img/tab_mine.png" style="width:2rem;height:2rem"></img>
+		      <span style="display:block" class="tab-label">设置</span>
+		    </a>
+	    </nav>
+    </div>
+    <script type='text/javascript' src='js/jquery.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/light7.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/light7-swiper.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/bootstrap.min.js' charset='utf-8'></script>
+    <script>
+    	$(function(){
+    		$("#pickerdomain").picker({
+			  toolbarTemplate: '<header class="bar bar-nav">\
+			  <button class="button button-link pull-left">取消</button>\
+			  <button class="button button-link pull-right close-picker">确定</button>\
+			  <h1 class="title">省份</h1>\
+			  </header>',
+			  cols: [
+			    {
+			      textAlign: 'center',
+			      values: ['北京', '河北', '河南', '山东', '安徽', '江西', '浙江', '广东', '广西', '江苏', '青岛']
+			    }
+			  ]
+			});
+			debugger;
+			var xmlhttp;
+			if(window.XMLHttpRequest){
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("GET", "http://127.0.0.1:3000", true);
+			xmlhttp.send();
+
+			// xmlhttp.open("POST", "demo_post.asp",true);
+			// xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			// xmlhttp.send("fname=bill&lname=gates");
+
+			xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+					console.log(xmlhttp.responseText);
+					document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+				}
+			}
+
+			// var ajax={
+			// 	xmlHttp: "",
+			// 	url: "",
+			// 	data: "",
+			// 	xmlHttpCreate: function(){
+			// 		var xmlHttp;
+			// 		try{
+			// 			xmlHttp = new XMLHttpRequest;
+			// 		} catch (e) {
+			// 			try {
+			// 				xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+			// 			} catch (e) {
+			// 				try {
+			// 					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			// 				} catch (e) {
+
+			// 				}
+			// 			}
+			// 		}
+			// 		return xmlHttp;
+			// 	},
+			// 	post: function(jsonObj) {
+			// 		this.data = jsonObj.data;
+			// 		this.url = jsonObj.url;
+			// 		this.xmlHttp = this.xmlHttpCreate();
+			// 		this.xmlHttp.open("post", this.url, true);
+			// 		this.xmlHttp.onreadystatechange = function(){
+			// 			if(this.xmlHttp.readyState == 4) {
+			// 				if(this.xmlHttp.status==200) {
+			// 					jsonObj.success(ajax.xmlHttp.responseText);;
+			// 				} else {
+			// 					jsonObj.error(ajax.xmlHttp.responseText);
+			// 				}
+			// 			}
+			// 		}
+			// 		this.xmlHttp.send(ajax.data);
+
+			// 	}
+
+			// }
+
+    	})
+    </script>
+  </body>
+</html>

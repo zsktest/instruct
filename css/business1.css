@@ -1,0 +1,109 @@
+ul, ul>li {
+	list-style: none
+}
+
+body,div,ul,li,p,span,ol,td,tbody{
+	margin: 0;
+	padding: 0;
+}
+
+.headshow {
+	background-color: #00948e;
+	height: 2.5em !important;
+}
+.headshow>h1 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.page {
+	border: none !important;
+	margin: 0 0 !important;
+	padding: 0 0  !important;
+}
+.topimg {
+	width: 100%;
+}
+.content-block {
+	margin: 0 0 !important;
+	padding: 0 0 !important;
+}
+
+.gridshow {
+	border: none;
+	margin-top: 0.5em;
+	background-color: #fff;
+}
+
+.gridshow tr {
+	display: inline-block;
+	width: 100%;
+}
+.gridshow td {
+	box-sizing: border-box;
+	padding-left: 3%;
+	display: inline-block;
+	width: 49.1%;
+}
+
+td:nth-of-type(even) {
+	border-left: 1px solid #aaa;
+}
+
+.imgs {
+	width: 30%;
+	display: inline-block;
+	padding-top: 0.2em;
+}
+.imgs>img {
+	width: 80%;
+	height: 80%;
+	display: inline-block;
+	margin: 10% 10%;
+
+}
+.description {
+	width: 60%;
+	font-size: 12px;
+	display: inline-block;
+	overflow: hidden;
+	padding-left: 1em
+}
+
+.description>.p1 {
+	font-size: 0.5em;
+}
+
+.description>.p2 {
+	font-size: 0.3em;
+	display: inline-block;
+	margin-bottom: 0.8em
+}
+
+.btms > li{
+	float: left;
+	width: 24%;
+	margin-left: 0.5%;
+}
+
+.btms > li>div {
+	margin-top: 0.5em;
+	margin-left: 2em;
+	width: 2em;
+	height: 2em;
+}
+.btms > li>div>img {
+	height: 100%;
+	width: 100%;
+}
+.bar-tab {
+	height: 4em !important;
+	background-color: rgb(239, 239, 244);
+	border-top: none;
+}
+.btms > li>span {
+	font-size: 0.6em;
+	display: inline-block;
+	margin-left: 3.2em
+}
